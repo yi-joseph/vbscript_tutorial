@@ -71,6 +71,19 @@ x = 4
 ergebnis = quadrat(x)
 # Dazuentsprechender Code heißt werteParameter.vbs
 
+# 6
+# Referenzparemeter
+# Syntax ist: ByRef a
+# Nicht nur der Wert einer Variable wird geändert, sondern auch die ganze Variable wird geändert, weil die Adresse von der Variable auf dem Speicher stehenbleibt. 
+# Vorteil: 
+# wenn man den Wert einer Variable auf verschiedenen Stellen ändern möchte, muss man nur einmal den Wert ändern. 
+# Nachteil: 
+# Man muss darauf achten, nicht falschen den Wert zu ändern. 
+# Dazuentsprechende Code heißt referenzParameter.vbs
+
+
+
+
 
 
 
