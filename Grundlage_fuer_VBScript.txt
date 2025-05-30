@@ -81,6 +81,35 @@ ergebnis = quadrat(x)
 # Man muss darauf achten, nicht falschen den Wert zu ändern. 
 # Dazuentsprechende Code heißt referenzParameter.vbs
 
+# 7
+# Unterschied zwischen "public" und "private" gilt hauptsächlich in einer Klasse!
+# "private" bedeutet, dass die deklarierten Funktionen, Prozeduren und Variablen nur innerhalb der Klasse aufrufbar sind. 
+# Alle Funktionen, Prozeduren außerhalb der Klasse können die privaten deklarierten Funktionen, Prozeduren und Variablen nicht aufrufen. 
+# Wie "local" in Objektorientierte Programmierung. 
+# "public" bedeutet, dass die deklarierten Funktionen, Prozeduren und Variablen außerhalb der Klasse aufrurbar sind. 
+# Wie "globle" in OOP.
+# Aber man muss darauf achten: 
+# VBScript hat keine Module wie C++ oder Python, durch die eine Klasse in einer anderen Code-Datei aufrufbar ist.
+# Der Unterschied zwischen public und private in VBScript macht Sinn nur in einer VBScript-Datei. 
+
+# 8 
+# "&" bedeutet Strings aneinanderhängen (Konkatenation)
+dim i, s
+i = 1
+s = ""
+s = s & i 
+# i ist eine Integer 1
+# & macht i zu einem String "1". 
+
+# 9 
+# While-Wend-Schleife
+# Die While-Schleife von VBScript muss mit "wend" unterbrechen. 
+# In C++ hat man "break" oder "continue".
+# Dazuentsprechender Code heißt while_wend_schleife.vbs
+
+
+
+
 
 
 
