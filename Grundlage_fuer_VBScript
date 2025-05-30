@@ -1,0 +1,19 @@
+Grundlage für VBScript
+Autor: Yi Miao 
+Ort: Heidelberg
+
+#1
+# VBScript ist eine interpretierte Script-Sprache.
+# Es gibt keine Funktion für "print" wie Python oder "stdout::cout<< "Hello World" ::std:endl;" in C++.
+# In VBScript kann man einfach als folgendes machen: 
+# Erstens eine .vbs-Datei erstellen: 
+# Hier benutze ich einfach den Editor Notapad++, also unter Console: 
+n hello_world.vbs
+# Jetzt kann man den Code einfach so schreiben: 
+MsgBox "Hello World in VBScript"
+# D.h. kann man nur mit dem Fenster wissen, ob die Script mit oder ohne Fehler läuft oder nicht. 
+# Eine alternative Möglichkeit zum Ausgeben: 
+WScript.Echo "Hier ist auch eine Möglichkeit"
+# Wenn man ein "" innerhalb dem String ausgeben möchte, muss man doppelt "" eingeben, z.B.:
+WScript.Echo "Hier ist auch eine Möglichkeit, ""Hello World "" auszugeben. "
+
