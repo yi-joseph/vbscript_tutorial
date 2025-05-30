@@ -56,6 +56,10 @@ MsgBox "Das Ergebnis ist: " & addition_zwei(a,b)
 # Syntax ist: ByVal a
 # Nur der Wert (Value) einer Variable wird an der Funktion oder dem Prozedur übergegeben,
 # die Variable bleibt, und zwar der Wert der Variable ausserhalb der Funktion bleibt stehen. 
+# Vorteil: 
+# Verschiedene Funktionen können immer die gleiche Basis einer Variable bearbeiten. 
+# Nachteil:
+# Wenn man in verschiedene Stelle den Werte von der Variable ändern möchte, muss man manuell den Wert anpassen. 
 Function quadrat(ByVal a)
 	a = a^2
 	quadrat = a
