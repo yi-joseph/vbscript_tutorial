@@ -29,3 +29,15 @@ end sub
 # Wenn man ertwas innerhalb des Prozedurs ausgeben läßt, kann man einfach ein MsgBox in Sub schreiben. 
 # Dazu entsprechender Code heißt "prozeduren.vbs"
 
+# 3 
+# Funktionen deklarieren
+# Funktion liefert einen Wert zurück
+# Aber man muss darauf aufpassen, der Wert hat den gleichen Namen von der Funktion!!!!
+Function funktionName()
+	funktionname = 5 + b
+end Function
+# Beispiel Code heißt funktion.vbs
+
+
+
+
