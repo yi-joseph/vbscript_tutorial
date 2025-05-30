@@ -38,6 +38,19 @@ Function funktionName()
 end Function
 # Beispiel Code heißt funktion.vbs
 
+# 4
+# Funktion mit Parameter deklarieren
+# Parameter heißt die benötigten Variablen in Funktiondeklaration
+Function addition_zwei(a, b)
+	addition_zwei = a + b
+end Function
+# a und b sind hier die Parameter von der Funktion addtion_zwei() in Deklaration. 
+
+# Argument heißt die benötigten Variablen in Aufruf von der Funktion in Hauptprogramm
+MsgBox "Das Ergebnis ist: " & addition_zwei(a,b)
+# a und b sind hier die Argumente beim Aufrufen der Funktion addition_zwei()
+
+
 
 
 
