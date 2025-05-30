@@ -49,6 +49,24 @@ end Function
 # Argument heißt die benötigten Variablen in Aufruf von der Funktion in Hauptprogramm
 MsgBox "Das Ergebnis ist: " & addition_zwei(a,b)
 # a und b sind hier die Argumente beim Aufrufen der Funktion addition_zwei()
+# Dazuentsprechender Code heißt parameter.vbs
+
+#5 
+# Werteparameter Call by Value in VBScript
+# Syntax ist: ByVal a
+# Nur der Wert (Value) einer Variable wird an der Funktion oder dem Prozedur übergegeben,
+# die Variable bleibt, und zwar der Wert der Variable ausserhalb der Funktion bleibt stehen. 
+Function quadrat(ByVal a)
+	a = a^2
+	quadrat = a
+end Function
+
+' Hauptprogramm:
+dim x, ergebnis
+x = 4
+ergebnis = quadrat(x)
+# Dazuentsprechender Code heißt werteParameter.vbs
+
 
 
 
