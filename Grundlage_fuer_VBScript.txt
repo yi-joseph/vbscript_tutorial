@@ -2,7 +2,7 @@ Grundlage für VBScript
 Autor: Yi Miao 
 Ort: Heidelberg
 
-#1
+# 1
 # VBScript ist eine interpretierte Script-Sprache.
 # Es gibt keine Funktion für "print" wie Python oder "stdout::cout<< "Hello World" ::std:endl;" in C++.
 # In VBScript kann man einfach als folgendes machen: 
@@ -16,4 +16,16 @@ MsgBox "Hello World in VBScript"
 WScript.Echo "Hier ist auch eine Möglichkeit"
 # Wenn man ein "" innerhalb dem String ausgeben möchte, muss man doppelt "" eingeben, z.B.:
 WScript.Echo "Hier ist auch eine Möglichkeit, ""Hello World "" auszugeben. "
+
+# 2
+# Prozeduren deklarieren
+sub additionRechnen()
+	a = 5 + b
+	MsgBox "Das Ergebnis ist: " & a
+end sub
+# Hier muss man darauf achten: 
+# sub liefert keinen Wert zurück. 
+# Nur eine Funktion liefert einen Wert zurück.
+# Wenn man ertwas innerhalb des Prozedurs ausgeben läßt, kann man einfach ein MsgBox in Sub schreiben. 
+# Dazu entsprechender Code heißt "prozeduren.vbs"
 
