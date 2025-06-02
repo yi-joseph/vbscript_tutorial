@@ -157,6 +157,8 @@ loop while i >= 2
 # Do_Loop-Schleife exit
 # wenn die while-Schleife eine unendliche Schleife gebildet hat, kann man mit "exit do" unterbrechen. 
 # Dazuentsprechender Code heißt do_loop_schleife_exit.vbs
+# Aufpassen, wenn man eine if-Schleife dafür schreiben will, 
+# muss man immer mit "end if" die If-Schleife austreten. 
 
 
 
