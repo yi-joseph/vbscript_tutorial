@@ -125,6 +125,8 @@ do
 	MsgBox s
 loop while i <= 6
 # hier wird die Bedingung bis zur Zeile "i = i + 1" ausgeführt. 
+# Dazuentsprechender Cope heißt while_schleife_1.vbs
+
 
 # wenn while hinter do steht und die Bedinung vor jedem Schleifendurchlauf geprüft wird, 
 # dann wird die Bedingung trotzdem vollständig ausgeführt. 
@@ -136,6 +138,8 @@ do while i <= 6
 	MsgBox s
 Loop
 # Hier wird die Bedingung vollständig ausgeführt, aber die Bedingung geht danach nicht mehr rein. 
+# Dazuentsprechender Code heißt while_schleife_2.vbs
+
 
 
 
