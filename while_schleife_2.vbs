@@ -14,3 +14,5 @@ do
 	MsgBox s
 loop while i <= 6
 
+' Ausgabe: 
+MsgBox "Das war's, schoenen Tag! "
