@@ -107,7 +107,35 @@ s = s & i
 # In C++ hat man "break" oder "continue".
 # Dazuentsprechender Code heißt while_wend_schleife.vbs
 
+# 10
+# While-Schleife
+# das Leifword "while" kann entweder nach "do" oder "loop" stehen.
+# Unterschied: 
+# Wenn while nach "do", 
+# werden die Bedingungen vor jedem Schleifdurchlauf geprüft;
+# Wenn while nach "loop",
+# werden die Bedingungen nach jedem Schleifdurchlauf geprüft.
+# Genauer gesagt, wenn while hinter loop steht und die Bedingung nach jedem Schleifendurchlauf geprüft wird, 
+# dann wird die Bedingung nicht vollständig ausgeführt, nur bis, wo die Bedingung reicht.
+# Z.B.: 
+do 
+	s = s &  i & ", "
+	MsgBox "Jetzt faengt es an: " & i
+	i = i + 1
+	MsgBox s
+loop while i <= 6
+# hier wird die Bedingung bis zur Zeile "i = i + 1" ausgeführt. 
 
+# wenn while hinter do steht und die Bedinung vor jedem Schleifendurchlauf geprüft wird, 
+# dann wird die Bedingung trotzdem vollständig ausgeführt. 
+# Z.B.:
+do while i <= 6
+	s = s & i & ", "
+	MsgBox "Jetzt faengt es an: " & i
+	i = i + 1
+	MsgBox s
+Loop
+# Hier wird die Bedingung vollständig ausgeführt, aber die Bedingung geht danach nicht mehr rein. 
 
 
 
