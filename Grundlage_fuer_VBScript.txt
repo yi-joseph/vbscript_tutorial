@@ -140,6 +140,20 @@ Loop
 # Hier wird die Bedingung vollständig ausgeführt, aber die Bedingung geht danach nicht mehr rein. 
 # Dazuentsprechender Code heißt while_schleife_2.vbs
 
+# 11
+# Until-Schleife
+# die bedeutet, dass die Schleife ausgeführt wird, bis die Bedingung wahr ist. 
+# Hier ist eine unendliche Schleife: 
+do 
+	s = s &  i & ", "
+	MsgBox "Jetzt faengt es an: " & i
+	i = i + 1
+	MsgBox s
+loop while i >= 2
+# Und dieses Programm kann man beenden, nur indem man bei Taskmanager das Programm beendet. 
+# strg + umschalten + esc" -> "mircrosft windows Based script ..." -> "Taske beenden"
+
+
 
 
 
