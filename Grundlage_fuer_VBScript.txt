@@ -163,19 +163,26 @@ loop while i >= 2
 # 13
 # For-Next_schleife
 # Syntax: 
+' Verhalten: um 1 vergrößert. 
 for i = 1 to 5 step 1
 	Anweisung
 next
+
 # oder: 
+' Um 1 verkleinert. 
 for i = 5 to 1 step -1
 	Anweisung
 next
 
 # Im Vergleich mit C++
-for (int i = 1; i i <= 5; i++) {
+for (int i = 1; i <= 5; i++) {
 	Anweisung
 }
 
+# oder: 
+for (int i = 5; i >= 1; i--) {
+	Anweisung
+}
 
 
 
