@@ -197,6 +197,8 @@ dim a(2), b
 for b in a
 	Anweisung
 next
+# Dazuentsprechender Code heißt for_each_next_schleife.vbs
+
 
 
 
