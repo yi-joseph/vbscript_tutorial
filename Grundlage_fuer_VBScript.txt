@@ -160,6 +160,23 @@ loop while i >= 2
 # Aufpassen, wenn man eine if-Schleife dafür schreiben will, 
 # muss man immer mit "end if" die If-Schleife austreten. 
 
+# 13
+# For-Next_schleife
+# Syntax: 
+for i = 1 to 5 step 1
+	Anweisung
+next
+# oder: 
+for i = 5 to 1 step -1
+	Anweisung
+next
+
+# Im Vergleich mit C++
+for (int i = 1; i i <= 5; i++) {
+	Anweisung
+}
+
+
 
 
 
