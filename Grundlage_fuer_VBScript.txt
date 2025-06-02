@@ -183,6 +183,10 @@ for (int i = 1; i <= 5; i++) {
 for (int i = 5; i >= 1; i--) {
 	Anweisung
 }
+# Dazuentsprechende Programme heißen: 
+# for_next_schleife.vbs
+# for_next_schleife_2.vbs
+# for_schleife_mit_sub.vbs
 
 
 
