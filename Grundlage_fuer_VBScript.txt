@@ -188,6 +188,17 @@ for (int i = 5; i >= 1; i--) {
 # for_next_schleife_2.vbs
 # for_schleife_mit_sub.vbs
 
+# 12
+# For-Each-Next-Schleife
+# Syntax: 
+# a(2) ist eine Array in VBScript:
+# a(0), a(1), a(2).
+dim a(2), b
+for b in a
+	Anweisung
+next
+
+
 
 
 
