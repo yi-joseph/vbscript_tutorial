@@ -17,7 +17,7 @@ end sub
 sub verkleinern()
 	Dim s, i
 	s = ""
-	MsgBox "Hier ist ein Programm zum verkleinern! "
+	MsgBox "Jetzt ist ein Programm zum verkleinern! "
 	for i = 5 to 1 step -1 
 		MsgBox "Jetzt faengt es an: " & i
 		s = s & i & ", "
