@@ -321,6 +321,37 @@ End Class
 # Definition von Objekt: 
 # Objekt ist eine Sammlung von Eigenschaften (Variablen) und Methoden (Funktionen und Prozeduren)
 # Syntax: Methoden definieren
+Class meineKlasse
+	public name
+	name = "Yi Miao"
+	public function nameGeben
+		nameGeben = "ich heiße: " & name
+	end function
+End Class
+
+# Syntax: Objekt erzeugen
+# mit set-new-Anweisung:
+# und zwar:
+# set variableName = new klassenName
+# Das ist die Vererbung in VBScript:
+# Ein Objekt aus einer Klasse wird erzeugt.
+
+' Eine Klasse definieren
+Class personal
+	public name
+	public function nameSagen
+		nameSagen = "Servus, ich heiße " & name
+	end function
+End Class
+' Eine Person zur Klasse personal hinzufügen
+Dim person_1, meineNameIst
+Set person_1 = new personal
+person_1.name = "Yi Miao"
+' Die Funktion von der Klasse Personal aufrufen: 
+meinNameIst = person_1.nameSagen
+
+# Dazuentsprechender Code hei
+
 
 
 
