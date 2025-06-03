@@ -230,6 +230,9 @@ else (Bedingung) {
 	Anweisung; 
 }
 
+# Dazuentsprechender Code heißt: if_else_statement.vbs
+
+
 
 
 
