@@ -232,6 +232,21 @@ else (Bedingung) {
 
 # Dazuentsprechender Code heißt: if_else_statement.vbs
 
+# 15
+# Input in VBScript schreiben: 
+# Syntax: 
+dim nameBenutzers
+
+# "Benutzereingabe" ist der Titel des Fensters
+# "Yi" ist der Defaulwert der Eingabe.
+# In diesem Fenster gibt es noch zwei Buttons: "OK" und "Abbrechen", die automatisch geschrieben werden.
+nameBenutzers = InputBox ("Wie heissen Sie? ", "Benutzereingabe", "Yi")
+
+MsgBox "Servus, " & nameBenutzers & ", hier ist ein Programm von If-Else-Statement mit Input in VBScript! "
+
+# Dazuentsprechender Code heißt: if_else_statement_mit_input.vbs
+
+
 
 
 
