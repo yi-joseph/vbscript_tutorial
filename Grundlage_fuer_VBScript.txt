@@ -246,6 +246,21 @@ MsgBox "Servus, " & nameBenutzers & ", hier ist ein Programm von If-Else-Stateme
 
 # Dazuentsprechender Code heißt: if_else_statement_mit_input.vbs
 
+# 16
+# If-Elseif-Else-Statement
+# Syntax: 
+if (Bedingung) then
+	Anweisung
+elseif (Bedingung) then
+	Anweisung
+elseif (Bedingung) then
+	Anweisung
+else
+	Anweisung
+end if
+# If-Elseif-Else-Statement überprüft jede Bedingungen nacheinander;
+# Wenn obere Bedingung als true auswertet, dann werden die übrigen Bedingungen nicht mehr überprüft. 
+
 
 
 
