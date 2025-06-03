@@ -298,8 +298,29 @@ Select Case mittagsMenue
 end select
 # Dazuentsprechender Code heißt select_case_mittagsMenue.vbs
 
+# 18
+# Konstant deklarieren
+Const pi = 3.14
 
+# 19 
+# Klassen
+# Defintion von Klassen: 
+# Klasse ist eine Defition für ein Objekt. 
+# Syntax: Klassen definieren
+class meineKlasse
+	' Klassedefinitionen
+End class
+# Syntax: Eigenschaften (Variablen in Klassen) definieren 
+Class meineKlasse
+	' In Klasse kann man eine Variable einfach so erzeugen, ohne Dim zu benutzen. 
+	public name
+End Class
 
+# 20 
+# Objekt
+# Definition von Objekt: 
+# Objekt ist eine Sammlung von Eigenschaften (Variablen) und Methoden (Funktionen und Prozeduren)
+# Syntax: Methoden definieren
 
 
 
