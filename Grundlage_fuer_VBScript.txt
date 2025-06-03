@@ -199,6 +199,20 @@ for b in a
 next
 # Dazuentsprechender Code heißt for_each_next_schleife.vbs
 
+# 13
+# If-Abfrage
+# Syntax: 
+if Bedingung then
+	Anweisung
+end if
+
+# Im Vergleich mit C++
+if (Bedingung) {
+	Anweisung;
+}
+
+# Dazuentsprechender Code heißt 
+
 
 
 
