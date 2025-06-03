@@ -202,7 +202,7 @@ next
 # 13
 # If-Abfrage
 # Syntax: 
-if Bedingung then
+if (Bedingung) then
 	Anweisung
 end if
 
@@ -214,6 +214,24 @@ if (Bedingung) {
 # Dazuentsprechender Code heißt: if_statement.vbs
 
 # 14
+# If-Else-Statement
+# Syntax: 
+if (Bedingung) then
+	Anweisung
+else (Bedingung) 
+	Anweisung
+end if
+
+# Im Vergleich mit C++: 
+if (Bedingung) {
+	Anweisung;
+}
+else (Bedingung) {
+	Anweisung; 
+}
+
+
+
 
 
 
