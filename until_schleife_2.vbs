@@ -1,5 +1,5 @@
 ' Hier ist ein Beispielcode fuer Until-Schleife
-' while steht hinter "loop"
+' until steht hinter "loop"
 ' Das heißt: die Bedingung wird nach jedem Schleifdurchlauf geprüft
 ' Der Dateiname heißt until_schleife_2.vbs
 ' Until bedeutet: wenn eine Bedingung true ist, dann stopt das Programm. 
