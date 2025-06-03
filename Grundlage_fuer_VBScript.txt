@@ -277,6 +277,28 @@ end if
 # Wenn obere Bedingung als true auswertet, dann werden die übrigen Bedingungen nicht mehr überprüft. 
 # Dazuentsprechender Code: if_elseif_else_statement.vbs
 
+# 17 
+# Select-Case-statement
+# Syntax: 
+dim mittagsMenue, auswahlBenutzers
+mittagsMenue = 3
+Select Case mittagsMenue 
+	Case 1 
+		auswahlBenutzers = "Burger"
+	Case 2 
+		auswahlBenutzers = "Doener"
+	Case 3 
+		auswahlBenutzers = "gegrillte Haxe"
+	Case 4 
+		auswahlBenutzers = "Salat"
+	Case 5 
+		auswahlBenutzers = "Pizza"
+	Case Else 
+		auswahlBenutzers = "Kuchen"
+end select
+# Dazuentsprechender Code heißt select_case_mittagsMenue.vbs
+
+
 
 
 
