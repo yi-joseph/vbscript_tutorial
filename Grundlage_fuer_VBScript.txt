@@ -11,7 +11,8 @@ Ort: Heidelberg
 n hello_world.vbs
 # Jetzt kann man den Code einfach so schreiben: 
 MsgBox "Hello World in VBScript"
-# D.h. kann man nur mit dem Fenster wissen, ob die Script mit oder ohne Fehler läuft oder nicht. 
+# Es gibt Intepreter für VBScript, der überprüft, ob es Syntaxfehler gibt. 
+# D.h. kann man mit dem Fenster wissen, ob die Script mit oder ohne Fehler läuft oder nicht. 
 # Eine alternative Möglichkeit zum Ausgeben: 
 WScript.Echo "Hier ist auch eine Möglichkeit"
 # Wenn man ein "" innerhalb dem String ausgeben möchte, muss man doppelt "" eingeben, z.B.:
@@ -43,7 +44,7 @@ end Function
 # Parameter heißt die benötigten Variablen in Funktiondeklaration
 Function addition_zwei(a, b)
 	addition_zwei = a + b
-end Function
+End Function
 # a und b sind hier die Parameter von der Funktion addtion_zwei() in Deklaration. 
 
 # Argument heißt die benötigten Variablen in Aufruf von der Funktion in Hauptprogramm
@@ -78,8 +79,8 @@ ergebnis = quadrat(x)
 # Vorteil: 
 # wenn man den Wert einer Variable auf verschiedenen Stellen ändern möchte, muss man nur einmal den Wert ändern. 
 # Nachteil: 
-# Man muss darauf achten, nicht falschen den Wert zu ändern. 
-# Dazuentsprechende Code heißt referenzParameter.vbs
+# Man muss darauf achten, nicht den Wert wegen Nachlässigkeit zu ändern. 
+# Dazuentsprechender Code heißt referenzParameter.vbs
 
 # 7
 # Unterschied zwischen "public" und "private" gilt hauptsächlich in einer Klasse!
@@ -154,11 +155,11 @@ loop while i >= 2
 # strg + umschalten + esc" -> "mircrosft windows Based script ..." -> "Taske beenden"
 
 # 12
-# Do_Loop-Schleife exit
+# Do-Loop-Schleife exit
 # wenn die while-Schleife eine unendliche Schleife gebildet hat, kann man mit "exit do" unterbrechen. 
 # Dazuentsprechender Code heißt do_loop_schleife_exit.vbs
-# Aufpassen, wenn man eine if-Schleife dafür schreiben will, 
-# muss man immer mit "end if" die If-Schleife austreten. 
+# Aufpassen, wenn man eine if-Statement dafür schreiben will, 
+# muss man immer mit "end if" die If-Statement austreten. 
 
 # 13
 # For-Next_schleife
@@ -200,7 +201,7 @@ next
 # Dazuentsprechender Code heißt for_each_next_schleife.vbs
 
 # 13
-# If-Abfrage
+# If-Statement
 # Syntax: 
 if (Bedingung) then
 	Anweisung
@@ -239,7 +240,7 @@ dim nameBenutzers
 
 # "Benutzereingabe" ist der Titel des Fensters
 # "Yi" ist der Defaulwert der Eingabe.
-# In diesem Fenster gibt es noch zwei Buttons: "OK" und "Abbrechen", die automatisch geschrieben werden.
+# In diesem Fenster gibt es noch zwei Buttons: "OK" und "Abbrechen", die automatisch von VBScript geschrieben werden.
 nameBenutzers = InputBox ("Wie heissen Sie? ", "Benutzereingabe", "Yi")
 
 MsgBox "Servus, " & nameBenutzers & ", hier ist ein Programm von If-Else-Statement mit Input in VBScript! "
@@ -257,7 +258,7 @@ nummerBenutzers = InputBox ("Geben Sie bitte eine Nummer ein: ", "Eine Nummer ei
 # Dafür ist die Syntax: 
 nummerBenutzers = CInt(nummerBenutzers)
 MsgBox "Sie haben die Zahl: " & nummerBenutzers & " eingegeben, schauen wir Mal, ob Sie Recht haben ... "
-# Genauer wird in dem Code angezeigt: if_elseif_else_statement.vbs
+	# Genauer wird in dem Code angezeigt: if_elseif_else_statement.vbs
 
 # Dazuentsprechender Code heißt: if_else_statement_mit_input.vbs
 
@@ -273,7 +274,7 @@ elseif (Bedingung) then
 else
 	Anweisung
 end if
-# If-Elseif-Else-Statement überprüft jede Bedingungen nacheinander;
+# If-Elseif-Else-Statement überprüft jede Bedingung nacheinander;
 # Wenn obere Bedingung als true auswertet, dann werden die übrigen Bedingungen nicht mehr überprüft. 
 # Dazuentsprechender Code: if_elseif_else_statement.vbs
 
@@ -305,11 +306,11 @@ Const pi = 3.14
 # 19 
 # Klassen
 # Defintion von Klassen: 
-# Klasse ist eine Defition für ein Objekt. 
+# Klasse ist eine Defition für Objekte. 
 # Syntax: Klassen definieren
-class meineKlasse
+Class meineKlasse
 	' Klassedefinitionen
-End class
+End Class
 # Syntax: Eigenschaften (Variablen in Klassen) definieren 
 Class meineKlasse
 	' In Klasse kann man eine Variable einfach so erzeugen, ohne Dim zu benutzen. 
@@ -324,9 +325,9 @@ End Class
 Class meineKlasse
 	public name
 	name = "Yi Miao"
-	public function nameGeben
+	public Function nameGeben
 		nameGeben = "ich heiße: " & name
-	end function
+	End Function
 End Class
 
 # Syntax: Objekt erzeugen
@@ -350,7 +351,32 @@ person_1.name = "Yi Miao"
 ' Die Funktion von der Klasse Personal aufrufen: 
 meinNameIst = person_1.nameSagen
 
-# Dazuentsprechender Code hei
+# Dazuentsprechender Code heißt klasse_erstellen.vbs
+' Hier ist ein Programm zur Objektorientierten Programmierung in VBScript
+' Dateiname: klasse_erstellen.vbs
+
+' Vorbereitung: Klasse definieren
+Class personal
+' public-Dinge mache ich immer einen _ hinter dem Variablennamen
+	public name_
+	public Function namenSagen_
+		namenSagen_ = "Servus, ich heisse " & name_
+	End Function
+	
+End Class
+
+' Hauptprogramm: eine Person zur Klasse personal hinzufügen
+Dim person_1, name_1
+Set person_1 = new personal
+' Begrüßen:
+MsgBox "Moin moin, hier ist ein Programm, Ihren Namen auszusprechen! "
+' Benutzernamen eingeben: 
+person_1.name_ = InputBox("Wer sind Sie? Geben Sie bitte Ihren Namen ein: ", "Benutzernamen eingeben", "Yi?")
+
+' Die Funktion aus der Klasse personal aufrufen:
+name_1 = person_1.namenSagen_
+MsgBox "Wie heissen Sie?"
+MsgBox name_1
 
 
 
