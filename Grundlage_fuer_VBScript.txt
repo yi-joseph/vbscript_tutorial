@@ -207,6 +207,11 @@ if (Bedingung) then
 	Anweisung
 end if
 
+# Syntax: If-Statement mit Not:
+If Not (Bedingung) Then
+	Anweisung
+End If
+
 # Im Vergleich mit C++
 if (Bedingung) {
 	Anweisung;
