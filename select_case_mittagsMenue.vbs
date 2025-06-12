@@ -27,7 +27,7 @@ Select Case mittagsMenue
 	Case 1 
 		auswahlBenutzers = "Burger"
 	Case 2 
-		auswahlBenutzers = "gegrillte Haxe"
+		auswahlBenutzers = "Doener"
 	Case 3 
 		auswahlBenutzers = "gegrillte Haxe"
 	Case 4
