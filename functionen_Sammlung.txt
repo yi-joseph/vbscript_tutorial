@@ -45,5 +45,17 @@ MsgBox "Hier ist die Zurueckgabe des Strings: " & ausgabe
 # 5 Mid(string, start_position, length_vom_String)
 # Die Funktion gibt den String zurück, der in dem gegebenen String von der start_position an nach dem length_vom_String geschrieben wurde
 # Beispiel 
+Dim text, ausgabe
+text = "_Hallo Welt!"
+
+' Überprüfen, ob "-" oder "_" am Anfang des String steht
+If ((Left(text, 1) = "-") or (Left(text, 1) = "_")) then
+	ausgabe = Mid(text, 2, Len(text))
+' "Hallo Welt" soll ausgegeben werden
+End If
+
+' "_" vor dem Dateinamen soll entfernt werden.  
+MsgBox "Hier ist der aufgegebene Text: " & ausgabe
+
 
 
