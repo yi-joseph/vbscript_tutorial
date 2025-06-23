@@ -82,4 +82,13 @@ MsgBox "Hier ist mein Name mit leeren Zeichen" & text & "!"
 name = Trim(text)
 MsgBox "Hier ist mein Name ohne leere Zeichen" & name & "!"
 
+# 8 Exists()
+# Diese Funktion überprüft, ob etwas schon existiert.
+# Wenn ja, gibt die Funktion "true" oder "1" zurück
+
+# 9 Value-Property 
+# object.Value
+# Dieses Property gibt einen Value oder einen String zurück.
+
+
 
