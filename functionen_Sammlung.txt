@@ -13,3 +13,37 @@ LCase(Text)
 Dim text : text = "Hallo!"
 Right(text,2)
 # Ausgabe: "o!"
+
+# 4 InStrRev(string1, string2)
+# Diese Funktion gibt die Position davon zurück, dass string2 in string1 zuerst auftritt. 
+# Beispiel:
+' Hier ist ein Beipielcode für die Funktion InStrRev(String1, String2)
+' Ziel: 
+' DateiNamen aus einem gegebenen Pfad exstrahieren und ausgeben
+
+Dim string1, string2, positionsNummer, dateiName
+string1 = "C:\Windows\Server\services\microsoft\word\meineDatei.txt"
+string2 = "\"
+
+positionsNummer = InStrRev(string1, string2)
+MsgBox "Servus, hier ist die Positionsnummer von string1: " & positionsNummer
+
+MsgBox "Der originale Pfad ist: " & string1
+
+dateiName = Right(string1, Len(string1)-InStrRev(string1, string2))
+MsgBox "Hier ist der Dateiname aus dem Pfad: " & dateiName
+
+# 4 Left(string, length_vom_string) 
+# Diese Funktion gibt den String zurück, der von der linken Seite an nach der Length geschrieben wurde
+# Beispiel: 
+dim text, ausgabe
+text = "Hallo"
+ausgabe = Left(text, 2)
+MsgBox "Hier ist die Zurueckgabe des Strings: " & ausgabe
+' "Ha" wird zurückgegeben.
+
+# 5 Mid(string, start_position, length_vom_String)
+# Die Funktion gibt den String zurück, der in dem gegebenen String von der start_position an nach dem length_vom_String geschrieben wurde
+# Beispiel 
+
+
