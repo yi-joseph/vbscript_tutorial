@@ -57,5 +57,15 @@ End If
 ' "_" vor dem Dateinamen soll entfernt werden.  
 MsgBox "Hier ist der aufgegebene Text: " & ausgabe
 
+# 6 Dateiendung löschen
+' Hier ist Programm, dass die Dateiendung von einer Datei entfernt
+ Dim dateiNameMitEndung, dateiName
+ 
+ dateiNameMitEndung = "Bereichtshefte.pdf"
+ MsgBox "Der originale Dateiname ist " & dateiNameMitEndung
+ 
+ dateiName = Left(dateiNameMitEndung, (InstrRev(dateiNameMitEndung, ".") - 1))
+ MsgBox "Hier ist der Dateiname ohne Dateiendung: " & dateiName
+ MsgBox "Dateiendung wurde erfolgreich geloescht! "
 
 
