@@ -90,5 +90,17 @@ MsgBox "Hier ist mein Name ohne leere Zeichen" & name & "!"
 # object.Value
 # Dieses Property gibt einen Value oder einen String zurück.
 
+# 10 Funktiongruppen von CreateObject("Scripting.FileSystemObject")
+# CreateObject("Scripting.FileSystemObject") erzeugt ein Obejkt für Dateisystemoperationen
+# Damit kann man Dateien kopieren/löschen, Ordner durchsuchen und Dateieigenschaften abrufen. 
+# Dafür gibt es Funktionen, die ich mit Beispiel erkläre
+Dim FilePath : FilePath = "C:\Windows\Microsoft\Word\meineDatei.pdf"
+Dim dateiName, dateiEndung
+Set fso = CreateObject("Scripting.FileSystemObject")
+dateiName = fso.GetFileName(FilePath)
+dateiEndung = fso.GetExtensionName(FilePath)
+' Hier sind zwei Funktionen, die den Dateinamen und die Dateiendung auslesen. 
+.GetFileName()
+.GetExtensionName()
 
 
