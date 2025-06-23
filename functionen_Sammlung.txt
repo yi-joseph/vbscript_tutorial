@@ -1,5 +1,5 @@
 # 1 LCase(String) 
 # Diese Funktion wandelt einen String zu Lowercase um.
 # Beispiel:
-Dim Text : Set Text = "HIER IST EIN STRING"
+Dim Text : Text = "HIER IST EIN STRING"
 LCase(Text)
