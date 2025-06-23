@@ -103,4 +103,18 @@ dateiEndung = fso.GetExtensionName(FilePath)
 .GetFileName()
 .GetExtensionName()
 
+# 10 Replace(text, String1, String2)
+# Diese Funktion gibt den Text zurück, indem String1 durch String 2 ersetzt wird
+# Beispiel: 
+' Hier ist ein Beispielcode für die Funktion Replace(text, string1, string2)
+
+Dim text, string1, string2, ausgabe
+text = "Berichtshefte_Yi_Miao.pdf"
+string1 = "Yi_Miao"
+string2 = "Miao_Yi"
+
+MsgBox "Der originale Text ist: " & text
+
+ausgabe = Replace(text, string1, string2)
+MsgBox "Der geaenderte Text ist: " & ausgabe
 
