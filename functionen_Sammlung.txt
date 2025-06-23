@@ -4,6 +4,12 @@
 Dim Text : Text = "HIER IST EIN STRING"
 LCase(Text)
 
+# UCase(Text)
+# Diese Funktion wandelt einen String zu Uppercase um.
+# Beispiel:
+Dim Text : Text = "hier ist ein string"
+UCase(Text)
+
 # 2 Len(String)
 # Die Funktion gibt die Length von einem String zurück. 
 
