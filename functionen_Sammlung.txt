@@ -3,3 +3,13 @@
 # Beispiel:
 Dim Text : Text = "HIER IST EIN STRING"
 LCase(Text)
+
+# 2 Len(String)
+# Die Funktion gibt die Length von einem String zurück. 
+
+# 3 Right(String, length_von_String)
+# Die Funktion gibt einen String zurück, der von der rechten Seite des eingegebenen Strings an nach der Length geschrieben wird.
+# Beispiel
+Dim text : text = "Hallo!"
+Right(text,2)
+# Ausgabe: "o!"
