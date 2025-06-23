@@ -21,6 +21,7 @@ WScript.Echo "Hier ist auch eine Möglichkeit, ""Hello World "" auszugeben. "
 # 2
 # Prozeduren deklarieren
 sub additionRechnen()
+	Dim a, b
 	a = 5 + b
 	MsgBox "Das Ergebnis ist: " & a
 end sub
@@ -43,6 +44,7 @@ end Function
 # Funktion mit Parameter deklarieren
 # Parameter heißt die benötigten Variablen in Funktiondeklaration
 Function addition_zwei(a, b)
+	Dim a, b
 	addition_zwei = a + b
 End Function
 # a und b sind hier die Parameter von der Funktion addtion_zwei() in Deklaration. 
@@ -428,6 +430,12 @@ name_1 = person_1.namenSagen_
 MsgBox "Wie heissen Sie?"
 MsgBox name_1
 
+# 21 Unterschied zwischen Dim und Set
+# Dim: eine Variable deklarieren
+# Set: set funktioniert nur mit Objekt, bei einfachen Variablen darf man nicht mit Set arbeiten.
+# Set weist einer Variable ein Objekt zu: 
+# z.B.:
+Dim person : Set person = CreateObject("WScript.Network")
 
 
 
