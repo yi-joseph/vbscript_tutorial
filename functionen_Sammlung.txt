@@ -68,4 +68,18 @@ MsgBox "Hier ist der aufgegebene Text: " & ausgabe
  MsgBox "Hier ist der Dateiname ohne Dateiendung: " & dateiName
  MsgBox "Dateiendung wurde erfolgreich geloescht! "
 
+# 7 Trim(string)
+# Diese Funktion löscht die leeren Zeichnen eines Strings auf beiden Seiten
+# Beispiel
+Dim text, name
+text = " Yi "
+name = Trim(text)
+' Hier ist Beispielcode für die Funktion Trim(String)
+Dim text, name
+text = " Yi "
+MsgBox "Hier ist mein Name mit leeren Zeichen" & text & "!"
+
+name = Trim(text)
+MsgBox "Hier ist mein Name ohne leere Zeichen" & name & "!"
+
 
