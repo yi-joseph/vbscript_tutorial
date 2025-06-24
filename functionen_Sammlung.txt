@@ -161,3 +161,12 @@ Dim wochentage : wochentage = array("Sun","Mon","Tue","Wed","Thu","Fri","Sat")
 ' Return 0
 Lbound(wochentage) 
 
+# 16 Ubound(arrayName, 2)
+# Diese Funktion gibt die größte Indexnummer von der zweiten Dimension des Arrays zurück. 
+# Default ist Ubound(arrayName, 1)
+
+# 17 Lbound(arrayName, 2)
+# Diese Funktion gibt die kleinste Indexnummer von der zweiten Dimension des Arrays zurück.
+# Default ist Lbound(arrayName, 1)
+
+
