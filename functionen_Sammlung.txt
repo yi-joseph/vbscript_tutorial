@@ -132,4 +132,14 @@ Dim fso : Set fso = CreateObject("Scripting.FileSystemObject")
 ' Variable fso wird von dem Objekt getrennt. 
 Set fso = Nothing
 
+# 12 On Error Resume Next  
+# Dieser Befehl führt die nächsten Zeilen weiter aus, wenn ein Fehler auftritt. 
 
+# 13 Umlaute in sXML schreiben: 
+Ä -> &#x00C4;
+Ö -> &#x00D6;
+Ü -> &#x00DC;
+ä -> &#x00E4;
+ö -> &#x00F6;
+ü -> &#x00FC;
+ß -> &#x00DF;
