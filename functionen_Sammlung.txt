@@ -145,4 +145,19 @@ Set fso = Nothing
 ß -> &#x00DF;
 # Beispiel: 
 ' Öffentliche Dokumente
-Register= array("&#x00D6;ffentliche Dokumente", "Formelle Dokumente", "Berichtsheft", "Schulmaterialien")
+Register = Array("&#x00D6;ffentliche Dokumente", "Formelle Dokumente", "Berichtsheft", "Schulmaterialien")
+
+# 14 Ubound(arrayName)
+# Diese Funktion gibt die größte Indexnummer eines Arrays zurück.
+# Beispiel
+Dim wochentage : wochentage = array("Sun","Mon","Tue","Wed","Thu","Fri","Sat")
+' Return 6
+Ubound(wochentage) 
+
+# 15 Lbound(arrayName)
+# Diese Funktion gibt die gleinste Indexnummer eines Arrays zurück.
+# Beispiel
+Dim wochentage : wochentage = array("Sun","Mon","Tue","Wed","Thu","Fri","Sat")
+' Return 0
+Lbound(wochentage) 
+
