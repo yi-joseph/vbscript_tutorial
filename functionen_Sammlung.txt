@@ -143,3 +143,6 @@ Set fso = Nothing
 ö -> &#x00F6;
 ü -> &#x00FC;
 ß -> &#x00DF;
+# Beispiel: 
+' Öffentliche Dokumente
+Register= array("&#x00D6;ffentliche Dokumente", "Formelle Dokumente", "Berichtsheft", "Schulmaterialien")
