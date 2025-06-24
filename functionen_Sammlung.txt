@@ -147,25 +147,25 @@ Set fso = Nothing
 ' Öffentliche Dokumente
 Register = Array("&#x00D6;ffentliche Dokumente", "Formelle Dokumente", "Berichtsheft", "Schulmaterialien")
 
-# 14 Ubound(arrayName)
+# 14 UBound(arrayName)
 # Diese Funktion gibt die größte Indexnummer eines Arrays zurück.
 # Beispiel
 Dim wochentage : wochentage = array("Sun","Mon","Tue","Wed","Thu","Fri","Sat")
 ' Return 6
 Ubound(wochentage) 
 
-# 15 Lbound(arrayName)
+# 15 LBound(arrayName)
 # Diese Funktion gibt die gleinste Indexnummer eines Arrays zurück.
 # Beispiel
 Dim wochentage : wochentage = array("Sun","Mon","Tue","Wed","Thu","Fri","Sat")
 ' Return 0
 Lbound(wochentage) 
 
-# 16 Ubound(arrayName, 2)
+# 16 UBound(arrayName, 2)
 # Diese Funktion gibt die größte Indexnummer von der zweiten Dimension des Arrays zurück. 
 # Default ist Ubound(arrayName, 1)
 
-# 17 Lbound(arrayName, 2)
+# 17 LBound(arrayName, 2)
 # Diese Funktion gibt die kleinste Indexnummer von der zweiten Dimension des Arrays zurück.
 # Default ist Lbound(arrayName, 1)
 
