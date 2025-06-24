@@ -124,3 +124,12 @@ MsgBox "Der originale Text ist: " & text
 ausgabe = Replace(text, string1, string2)
 MsgBox "Der geaenderte Text ist: " & ausgabe
 
+# 11 Keyword: Nothing
+# Dieses Keyword trennt eine Objekt-Variable von einem aktuellen Objekt. 
+# Beispiel:
+' Variable fso wird zu einem Objekt zugewiesen
+Dim fso : Set fso = CreateObject("Scripting.FileSystemObject")
+' Variable fso wird von dem Objekt getrennt. 
+Set fso = Nothing
+
+
