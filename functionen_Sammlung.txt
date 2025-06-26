@@ -169,4 +169,8 @@ Lbound(wochentage)
 # Diese Funktion gibt die kleinste Indexnummer von der zweiten Dimension des Arrays zurück.
 # Default ist Lbound(arrayName, 1)
 
+# 18 CLng(string)
+# Diese Funktion umwandelt einen String zum Typ long. 
+
+
 
