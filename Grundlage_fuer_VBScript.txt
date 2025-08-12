@@ -437,6 +437,26 @@ MsgBox name_1
 # z.B.:
 Dim person : Set person = CreateObject("WScript.Network")
 
+# 22 with object end with-Syntax
+# Syntax: 
+With object
+    .Property1 = Wert1
+    .Property2 = Wert2
+    .Methode1()
+End With
+# Diese Syntax macht folgendes: 
+# alle folgenden Punkte innerhalb des Blocks beziehen sich auf das gleiche Objekt. 
+# Innerhalb des Blocks beginnen alle Aufrufe mit einem Punkt (.Property oder .Methode), 
+# um auf das im With genannte Objekt zuzugreifen.
+# z.B.: 
+Dim objFSO : Set objFSO = CreateObject("Scripting.FileSystemObject")
+# Die Eigenschaft vom Objekt objFSO werden hinzugefügt. 
+With objFSO
+    .CreateFolder "C:\Test"
+    .DeleteFile "C:\Temp\alt.txt"
+    .MoveFile "C:\Temp\neu.txt", "C:\Test\neu.txt"
+End With
+
 
 
 
